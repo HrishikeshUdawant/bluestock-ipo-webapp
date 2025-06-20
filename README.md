@@ -1,14 +1,14 @@
 Follow these command to run this project:
 
-git clone https://github.com/Vijayvarma115/bluestock-ipo-webapp.git
+git clone https://github.com/HrishikeshUdawant/bluestock-ipo-webapp
 
 cd bluestock-ipo-webapp
 
-pip3 install -r requirements.txt
-python3 manage.py makemigrations
-python3 manage.py migrate
-python3 manage.py createsuperuser
-python3 manage.py runserver
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
 
 
 
@@ -28,11 +28,11 @@ How to connect a Django application to your PostgreSQL database
 
 
 CREATE DATABASE bluestock;
-CREATE USER daiyanalam WITH PASSWORD '12345';
-ALTER ROLE daiyanalam SET client_encoding TO 'utf8';
-ALTER ROLE daiyanalam SET default_transaction_isolation TO 'read committed';
-ALTER ROLE daiyanalam SET timezone TO 'UTC';
-GRANT ALL PRIVILEGES ON DATABASE bluestock TO daiyanalam;
+CREATE USER Hrishikesh WITH PASSWORD '1234';
+ALTER ROLE Hrishikesh SET client_encoding TO 'utf8';
+ALTER ROLE Hrishikesh SET default_transaction_isolation TO 'read committed';
+ALTER ROLE Hrishikesh SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE bluestock TO Hrishikesh;
 
 
 
@@ -46,21 +46,16 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'bluestock',
-        'USER': 'daiyanalam',
-        'PASSWORD': '12345',
+        'USER': 'Hrishikesh',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432',
     }
 }
 
 Apply Migrations:
--->python3 manage.py makemigrations
+-->python manage.py makemigrations
 
--->python3 manage.py migrate
+-->python manage.py migrate
 
--->python3 manage.py runserver
-
-**Follow these video link how to connect with postgresql:**
-
-https://drive.google.com/file/d/1jUYqTqp_CTMRYu6FKNIT5327IPQh0fYk/view?usp=sharing
-
+-->python manage.py runserver

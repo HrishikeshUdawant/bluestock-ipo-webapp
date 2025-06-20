@@ -76,24 +76,25 @@ AUTH_USER_MODEL = 'account.CustomUser'
 
 WSGI_APPLICATION = "IPO.wsgi.application"
 
-# Database configuration
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
+#Database configuration
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
+'''
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'bluestock',
-        'USER': 'daiyanalam',
-        'PASSWORD': '12345',
+        'USER': 'Hrishikesh',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432',  
     }
 }
-
+'''
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [

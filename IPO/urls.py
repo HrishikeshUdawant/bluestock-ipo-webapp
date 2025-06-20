@@ -26,7 +26,6 @@ urlpatterns = [
     path('api/', include('cardapi.urls')),
     path('account/', include('account.urls')),
     path('captcha/', include('captcha.urls')),
- 
 ]
 
 
